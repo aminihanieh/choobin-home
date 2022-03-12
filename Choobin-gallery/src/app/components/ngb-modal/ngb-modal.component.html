@@ -1,0 +1,17 @@
+<ng-template #modal>
+  <div class="modal-header" *ngIf="title">
+    <div  class="k-cursor-pointer h3 mb-0" aria-label="Close" (click)="dismissModal()"><span aria-hidden="true">&times;</span></div>
+    <h5 class="modal-title">{{ title}}</h5>
+  </div>
+  <div class="modal-body">
+    <ng-content></ng-content>
+  </div>
+  <div class="modal-footer">
+    <button *ngIf="closeText" type="button" class="btn btn-outline-secondary" (click)="dismissModal()">
+      {{ closeText }}
+    </button>
+    <button *ngIf="confirmText" type="button" class="btn btn-outline-primary" (click)="confirmModal()">
+      {{ confirmText }}
+    </button>
+  </div>
+</ng-template>

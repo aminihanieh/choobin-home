@@ -1,0 +1,5 @@
+<div *ngIf="errorInfo" class="alert alert-dismissible fade show alert-danger shadow sticky-top text-center" role="alert">
+  <span class="iransans-web-en"> {{errorInfo?.message}}</span>
+  <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close" (click)="onCloseClick()">
+  </button>
+</div>

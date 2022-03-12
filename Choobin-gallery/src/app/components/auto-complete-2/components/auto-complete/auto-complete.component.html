@@ -1,0 +1,18 @@
+<div (focusout)="onFocusOut(autoCompleteInstance)">
+  <kendo-autocomplete
+     #autoCompleteInstance="kendoAutoComplete"
+    [data]="displayList"
+    [valueField]="textField"
+    [value]="selectedItem ? selectedItem[textField] : ''"
+    [filterable]="true"
+    [placeholder]="placeHolder"
+    (valueChange)="onValueChange($event)"
+    (filterChange)="onFilterChange($event,autoCompleteInstance)"
+    (focus)="onFocus(autoCompleteInstance)"
+     class="k-rtl mx-2">
+    <ng-template kendoAutoCompleteNoDataTemplate>
+      <h6><span class="k-icon k-i-warning"></span><br /><br /> داده ای با&thinsp;این مشخصات یافت نشد</h6>
+    </ng-template>
+  </kendo-autocomplete>
+
+</div>

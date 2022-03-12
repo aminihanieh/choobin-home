@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <div id="formContent" class="py-5 px-3">
+
+    <div class="w-75 mx-auto mb-5">
+      <h2>سیستم پشتیبان سپهر</h2>
+    </div>
+
+    <form #form="ngForm" novalidate>
+      <div class="text-danger pb-2" [style.visibility]="this.viewModel.showError?'visible':'hidden'">
+        اطلاعات وارد شده صحیح نمیباشد! </div>
+      <input type="text" class="w-100" id="userName" name="userName" placeholder="نام کاربری" required
+        [(ngModel)]="viewModel.username">
+      <div class="w-100  mt-2 position-relative">
+        <span [class]="'k-icon k-i-eye p-4 ' + (viewModel.showPass?'':'closed-eye')"
+          (click)="viewModel.showPass = !viewModel.showPass">
+        </span>
+        <input [type]="viewModel.showPass?'text':'password'" class="w-100 text-left" id="password" name="password" required
+          placeholder="رمز عبور" [(ngModel)]="viewModel.password">
+      </div>
+
+      <kendo-dropdownlist class="w-100 mt-3 round" [data]="viewModel.languageList" [(ngModel)]="viewModel.language"
+        name="lang">
+      </kendo-dropdownlist>
+
+      <div class="d-flex align-items-center mt-3">
+        <img [src]="'data:image/png;base64,' + viewModel.captchaImage" class="ps-2" />
+        <input type="text" id="'Captcha'" name="'Captcha'" placeholder="کدامنیتی" class="w-100 text-left" required
+          [(ngModel)]="viewModel.captchaValue">
+      </div>
+
+      <input type="submit" name="submit" (click)="onLoginClick()" [disabled]="form.invalid"
+        class="w-100 mt-4 bg-dark bg-gradient text-light border-none" value="ورود">
+
+    </form>

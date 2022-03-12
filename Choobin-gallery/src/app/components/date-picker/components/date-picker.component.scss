@@ -1,0 +1,19 @@
+.datepicker {
+  position: relative;
+  display: block;
+}
+
+/* The actual popup (appears on top) */
+.datepicker .popup {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(60,64,67, 0.3), 0 4px 8px 3px rgba(60,64,67, 0.15);
+  /* text-align: center; */
+  border-radius: 6px;
+  position: absolute;
+  z-index: 10;
+  top:100%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+

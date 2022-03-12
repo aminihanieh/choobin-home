@@ -1,0 +1,15 @@
+<div class="datepicker" id="{{timestamp}}">
+
+  <input type="text" [ngModel]="value" (ngModelChange)="onModelChange($event)" [placeholder]="placeHolder" class="border rounded p-1 text-center" />
+
+  <button class="rounded border p-1" (click)="togglePopUp()"> <span class="k-icon k-i-calendar"></span></button>
+
+  <div *ngIf="isOpen" class="popup" #popup>
+    <calendar-toggle [(value)]="calendarType" (onChange)="onCalendarTypeChange($event)" ></calendar-toggle>
+
+    <persian-calendar *ngIf="calendarType == shamsiCalendar" [text]="value"
+      (textChange)="onSelectedDateChange($event)" [placeHolder]="placeHolder"></persian-calendar>
+    <miladi-calendar *ngIf="calendarType != shamsiCalendar" [text]="value"
+      (textChange)="onSelectedDateChange($event)" [placeHolder]="placeHolder"></miladi-calendar>
+  </div>
+</div>

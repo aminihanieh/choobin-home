@@ -1,0 +1,9 @@
+<kendo-dialog [title]="title" (close)="onModalClose()" [width]="width?width:''" [maxHeight]="maxHeight?maxHeight:580" [minWidth]="minWidth?minWidth:''" class="k-rtl">
+  <ng-content></ng-content>
+  <kendo-dialog-actions [layout]="'normal'" *ngIf="closeText || confirmText">
+    <div  class="text-center m-auto">
+      <button kendoButton class="s-btn-secondary px-5" *ngIf="closeText" (click)="onModalClose()">{{closeText}}</button>
+      <button kendoButton class="s-btn-info px-5 " *ngIf="confirmText" (click)="onModalConfirmed()">{{confirmText}}</button>
+    </div>
+  </kendo-dialog-actions>
+</kendo-dialog>

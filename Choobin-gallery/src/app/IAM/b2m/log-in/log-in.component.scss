@@ -1,0 +1,82 @@
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+#formContent {
+  border-radius: 10px;
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  border: 2px solid #ebebeb;
+}
+
+input[type="submit"] {
+  padding: 15px 80px;
+  text-decoration: none;
+  font-size: 13px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: right;
+  text-decoration: none;
+  font-size: 16px;
+  border: 2px solid #f6f6f6;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  &:focus {
+    background-color: #fff;
+
+    border-bottom: 2px solid #0d0d0d;
+  }
+  &:placeholder {
+    color: #cccccc;
+  }
+}
+
+.k-i-eye {
+  position: absolute;
+  cursor: pointer;
+  top: 8%;
+  right: 0;
+}
+
+.closed-eye {
+  color: #adadad !important;
+}
+
+::ng-deep {
+  .k-dropdown .k-dropdown-wrap .k-input,
+  .k-dropdowntree .k-dropdown-wrap .k-input {
+    padding: 1.375rem 0.75rem;
+  }
+}
+/* OTHERS */
+
+*:focus {
+  outline: none;
+}
+
+#captcha {
+  width: calc(100% - 170px);
+}

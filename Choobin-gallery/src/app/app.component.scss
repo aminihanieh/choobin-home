@@ -1,0 +1,149 @@
+a {
+  color: #333;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+::ng-deep .table th,
+::ng-deep .table td {
+  vertical-align: middle;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ------------------font---------------------- */
+.iransans-web-fa-number {
+  font-family: IRANSans-web-fa-number;
+}
+
+.iransans-medium-fa-number {
+  font-family: IRANSans-medium-fa-number;
+}
+
+.iransans-bold-fa-number {
+  font-family: IRANSans-bold-fa-number;
+}
+
+.iransans-light-fa-number {
+  font-family: IRANSans-light-fa-number;
+}
+
+.iransans-web {
+  font-family: IRANSans-web;
+}
+
+.iransans-web-en {
+  font-family: IRANSans-web;
+}
+
+.iransans-web-en-medium {
+  font-family: IRANSans-web-en-medium;
+}
+
+.font-size-8 {
+  font-size: 8px;
+}
+
+.font-size-9 {
+  font-size: 9px;
+}
+
+.font-size-10 {
+  font-size: 10px;
+}
+
+.font-size-13 {
+  font-size: 13px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-15 {
+  font-size: 15px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-17 {
+  font-size: 17px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+.font-size-22 {
+  font-size: 22px;
+}
+
+/* ------------------width---------------------- */
+
+.w-6 {
+  width: 6%;
+}
+
+.w-7 {
+  width: 7%;
+}
+
+.w-9 {
+  width: 9% !important;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-13 {
+  width: 13% !important;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-18 {
+  width: 18%;
+}
+
+.w-20 {
+  width: 20% !important;
+}
+
+.w-23 {
+  width: 23% !important;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-35 {
+  width: 35% !important;
+}
+
+.w-65 {
+  width: 65% !important;
+}
+
+.w-85 {
+  width: 85%;
+}

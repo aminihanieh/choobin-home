@@ -1,4 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  font-size: 12px;
+  margin: 0;
+  padding: 10px;
+  line-height: 23px;
+  background-color: #ffffff;
+  font-family: IRANSans-web-fa-number !important;
+  position: relative;
+  height: 100%;
+  color: #333;
+}

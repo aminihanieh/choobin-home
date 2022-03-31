@@ -7,6 +7,7 @@ import { ErrorNotificationHttpInterceptorService } from './services/notification
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { SpinnerHttpInterceptorService } from './services/spinner/spinner-http-interceptor.service';
 import { AppModule as StartupAppModule } from 'src/app/app.module';
+import { HomeModule } from './home/home.module';
 
 
 
@@ -14,10 +15,11 @@ import { AppModule as StartupAppModule } from 'src/app/app.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
+    HomeModule,
     BrowserAnimationsModule,
   ],
   bootstrap: [AppComponent],

@@ -1,3 +1,5 @@
+@use "src/assets/help/_variables.scss" as c;
+
 html,
 body {
   height: 100%;
@@ -8,7 +10,7 @@ body {
   margin: 0;
   padding: 10px;
   line-height: 23px;
-  background-color: #ffffff;
+  background-color: c.$darkBg;
   font-family: IRANSans-web-fa-number !important;
   position: relative;
   height: 100%;

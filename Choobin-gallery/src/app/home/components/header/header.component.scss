@@ -1,0 +1,58 @@
+@use "src/assets/help/_variables" as c;
+
+.banner {
+  width: 857px;
+  height: 454px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  .img {
+    background-image: url("/src/assets/images/banner.jpg");
+    background-size: contain;
+    border: 2px solid c.$white;
+    border-top: 0;
+    border-left: 0;
+    width: inherit;
+    height: inherit;
+    position: relative;
+    right: 70px;
+  }
+
+  .shadow {
+    box-sizing: content-box;
+    width: inherit;
+    height: inherit;
+    padding-bottom: 80px;
+    background: c.$primaryColor;
+    position: absolute;
+  }
+}
+
+.wrapper {
+  width: 40%;
+  padding-top: 70px;
+  .title {
+    color: c.$white;
+    h1 {
+      font-size: 50px;
+      line-height: 70px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+
+  .btn {
+    border: 1px solid c.$primaryColor;
+    border-radius: 0;
+    margin-top: 55px;
+    color: c.$primaryColor;
+    &:hover {
+      background-color: c.$primaryColor;
+      color: c.$darkBg;
+      outline: 0;
+    }
+  }
+}

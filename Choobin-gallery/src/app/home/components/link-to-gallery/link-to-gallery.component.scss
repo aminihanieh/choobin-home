@@ -1,0 +1,31 @@
+@use "src/assets/help/_variables" as c;
+
+section {
+  margin-top: 160px;
+}
+
+
+.title {
+    color: c.$white;
+    h1 {
+      font-size: 40px;
+      line-height: 70px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 30px;
+    }
+
+
+  .btn {
+    border: 1px solid c.$primaryColor;
+    border-radius: 0;
+    margin-top: 55px;
+    color: c.$primaryColor;
+    &:hover {
+      background-color: c.$primaryColor;
+      color: c.$darkBg;
+      outline: 0;
+    }
+  }
+}

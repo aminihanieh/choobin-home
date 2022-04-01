@@ -11,8 +11,19 @@ body {
   padding: 10px;
   line-height: 23px;
   background-color: c.$darkBg;
-  font-family: IRANSans-web-fa-number !important;
+  font-family: Playfair_Display !important;
   position: relative;
   height: 100%;
   color: #333;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: Playfair_Display !important;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1040px;
+  }
 }

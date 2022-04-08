@@ -1,0 +1,27 @@
+@use "src/assets/help/_variables" as c;
+
+section {
+  margin-top: 160px;
+}
+
+.bg-fix {
+  height: 240px;
+  background-image: url("/src/assets/images/img (5).png");
+  // background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  position: absolute;
+  left: 0;
+}
+
+h3 {
+  font-size: 28px;
+  color: c.$white;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  line-height: 30px;
+  color: c.$white;
+}

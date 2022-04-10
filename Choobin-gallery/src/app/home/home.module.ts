@@ -5,6 +5,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LinkToGalleryComponent } from './components/link-to-gallery/link-to-gallery.component';
 import { AdvantagesComponent } from './components/advantages/advantages.component';
+import { RecommendedComponent } from './components/recommended/recommended.component';
 
 
 
@@ -14,7 +15,8 @@ import { AdvantagesComponent } from './components/advantages/advantages.componen
     NavBarComponent,
     HeaderComponent,
     LinkToGalleryComponent,
-    AdvantagesComponent
+    AdvantagesComponent,
+    RecommendedComponent
   ],
   imports: [
     CommonModule

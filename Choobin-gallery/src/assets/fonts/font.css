@@ -232,7 +232,7 @@
 
 /* vietnamese */
 @font-face {
-  font-family: 'Moon Dance';
+  font-family: 'Moon_Dance';
   font-style: normal;
   font-weight: 400;
   src: url("src/assets/fonts/moon-dance/WBLgrEbUbFlYW9ekmGawS23oKfio.woff2") format('woff2');
@@ -240,7 +240,7 @@
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Moon Dance';
+  font-family: 'Moon_Dance';
   font-style: normal;
   font-weight: 400;
   src: url("src/assets/fonts/moon-dance/WBLgrEbUbFlYW9ekmGawS2zoKfio.woff2") format('woff2');
@@ -248,7 +248,7 @@
 }
 /* latin */
 @font-face {
-  font-family: 'Moon Dance';
+  font-family: 'Moon_Dance';
   font-style: normal;
   font-weight: 400;
   src: url("src/assets/fonts/moon-dance/WBLgrEbUbFlYW9ekmGawS2LoKQ.woff2") format('woff2');

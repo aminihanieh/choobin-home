@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LinkToGalleryComponent } from './components/link-to-gallery/link-to-gallery.component';
 import { AdvantagesComponent } from './components/advantages/advantages.component';
 import { RecommendedComponent } from './components/recommended/recommended.component';
+import { TestimonialComponent } from './components/testimonial/testimonial.component';
 
 
 
@@ -16,10 +17,11 @@ import { RecommendedComponent } from './components/recommended/recommended.compo
     HeaderComponent,
     LinkToGalleryComponent,
     AdvantagesComponent,
-    RecommendedComponent
+    RecommendedComponent,
+    TestimonialComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports:[
     HomeComponent

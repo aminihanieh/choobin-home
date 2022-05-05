@@ -4,7 +4,8 @@
   <div class="Carousel-container">
     <div class="row align-items-center justify-content-center mt-5" class="Carousel" #Carousel>
       <div class="Carousel__item item" *ngFor="let item of data; let i=index" [class.midElement]="i===midElementIndex"
-        [class.leftElement]="i===leftElementIndex" [class.rightElement]="i === rightElementIndex " (click)="putItCenter(i)">
+        [class.leftElement]="i===leftElementIndex" [class.rightElement]="i === rightElementIndex "
+        (click)="onTestimonialCardClicked(i)">
         <i class="bi bi-quote"></i>
         <p>{{item.text}}</p>
         <h5>{{item.author}}</h5>

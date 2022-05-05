@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { data } from './const/data';
 
 
@@ -13,6 +13,7 @@ export class TestimonialComponent implements OnInit {
   midElementIndex: number = 1;
   rightElementIndex: number = 2;
   leftElementIndex: number = 0;
+  interval: NodeJS.Timeout;
 
 
   ngOnInit(): void {
@@ -20,28 +21,34 @@ export class TestimonialComponent implements OnInit {
   }
 
 
-  startTimer() {
-    setInterval(() => {
+  private startTimer() {
+    this.interval = setInterval(() => {
       this.next()
     }, 7000)
   }
 
-  next() {
+  private next() {
     const currentMidIndex = this.midElementIndex
-
     this.rightElementIndex = currentMidIndex;
     this.leftElementIndex = currentMidIndex === 2 ? 0 : currentMidIndex + 1;
     this.midElementIndex = currentMidIndex === 0 ? 2 : currentMidIndex - 1;
   }
 
-  putItCenter(selectedItemIndex: number) {
+  onTestimonialCardClicked(selectedItemIndex: number) {
+    this.putCardInTheMiddle(selectedItemIndex);
+    this.resetInterval();
+  }
+
+
+  private resetInterval() {
+    clearInterval(this.interval);
+    this.startTimer();
+  }
+
+  private putCardInTheMiddle(selectedItemIndex: number) {
     this.midElementIndex = selectedItemIndex;
     this.leftElementIndex = selectedItemIndex === 0 ? 2 : selectedItemIndex - 1;
     this.rightElementIndex = selectedItemIndex === 2 ? 0 : selectedItemIndex + 1;
   }
-
-
-
-
 
 }

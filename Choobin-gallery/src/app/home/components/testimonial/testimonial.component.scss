@@ -10,16 +10,6 @@ i {
   margin-bottom: 10px;
 }
 
-%buttonStyles {
-  position: absolute;
-  top: 35%;
-  cursor: pointer;
-  z-index: 50;
-  outline: 0;
-  border: 0;
-  background: none;
-}
-
 .Carousel-container {
   max-width: 1500px;
   height: 200px;
@@ -38,24 +28,14 @@ i {
     box-shadow: 0 10px 15px rgba(22, 22, 22, 0.2);
     overflow: hidden;
     transform: translate(-50%, -50%);
-    transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
-    width: 480px;
+    transition: transform 1.3s cubic-bezier(0.16, 1, 0.3, 1),
+      background-color 1.3s cubic-bezier(0.16, 1, 0.3, 1);
+    width: 430px;
     background-color: c.$primaryColor;
     padding: 10px 15px;
-    filter: blur(2px);
+    filter: blur(1px);
     i {
       color: c.$secondaryColor;
-    }
-    &.midElement {
-      background-color: c.$secondaryColor;
-      filter: none;
-      p {
-        font-size: 16px;
-        line-height: 27px;
-      }
-      i {
-        color: c.$primaryColor;
-      }
     }
 
     .title {
@@ -80,12 +60,32 @@ i {
   }
 }
 
-button.pre {
-  @extend %buttonStyles;
-  left: 0;
+.leftElement {
+  transform: translate(-50%, -50%) translate(-220px, 0px) scale(0.9, 0.9);
+  left: 50%;
+  top: 40%;
+  z-index: -1;
 }
 
-button.next {
-  @extend %buttonStyles;
-  right: 0;
+.midElement {
+  transform: translate(-50%, -50%) translate(0px, 0px) scale(1, 1);
+  left: 50%;
+  top: 40%;
+  z-index: 1;
+  background-color: c.$secondaryColor;
+  filter: none;
+  p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  i {
+    color: c.$primaryColor;
+  }
+}
+
+.rightElement {
+  transform: translate(-50%, -50%) translate(+220px, 0px) scale(0.9, 0.9);
+  left: 50%;
+  top: 40%;
+  z-index: -1;
 }

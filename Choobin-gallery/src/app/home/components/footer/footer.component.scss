@@ -1,0 +1,36 @@
+@use "src/assets/help/_variables" as c;
+
+i{
+  font-size: 1.3rem;
+}
+
+section {
+  background-color: #110e0e;
+  position: absolute;
+  width: 100%;
+  left: 0;
+
+  * {
+    color: c.$primaryColor;
+  }
+}
+
+.input-wrapper {
+  border: 1px solid c.$primaryColor;
+  input {
+    background: none;
+    border: none;
+    outline: none;
+    color: c.$white;
+    font-size: 18px;
+    &::placeholder {
+      color: c.$primaryColor;
+    }
+  }
+  button {
+    background-color: c.$primaryColor;
+    color: c.$white;
+    border-radius: 0;
+  }
+}
+

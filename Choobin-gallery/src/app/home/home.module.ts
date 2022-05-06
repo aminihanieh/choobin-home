@@ -7,6 +7,7 @@ import { LinkToGalleryComponent } from './components/link-to-gallery/link-to-gal
 import { AdvantagesComponent } from './components/advantages/advantages.component';
 import { RecommendedComponent } from './components/recommended/recommended.component';
 import { TestimonialComponent } from './components/testimonial/testimonial.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -19,6 +20,7 @@ import { TestimonialComponent } from './components/testimonial/testimonial.compo
     AdvantagesComponent,
     RecommendedComponent,
     TestimonialComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
